@@ -6,7 +6,7 @@ let contract: any;
 
 if (typeof window !== 'undefined' && typeof window.ethereum !== 'undefined') {
     web3 = new Web3(window.ethereum);
-    const contractAddress = "0xf6737F78974A2EEF0A9424E98f6E16f1dF130F24"; // ganti dengan address contract kalian
+    const contractAddress = "0xf0a63852f468930263a56c9208252637715f69cf"; // ganti dengan address contract kalian
     contract = new (web3 as any).eth.Contract(ABI, contractAddress); 
 } else {
     console.log('Ethereum wallet not detected. Please install MetaMask or another wallet.');
